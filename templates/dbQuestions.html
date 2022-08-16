@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="\static\questions.js"></script> -->
+  </head>
+  <body>
+    <!-- <p>hello bro</p> -->
+    <p id="dbData" >{{data}}</p>
+    <p>above</p><br><br>
+    <script>
+        // document.write("helo");
+       let temp = document.getElementById("dbData").innerHTML;
+    //    const try1 = String(temp)
+       const obj = JSON.parse(temp)
+       document.write(obj)
+
+    //    for(let i=0 ; i<temp.length; i++){
+    //         for (const [key1, value1] of Object.entries(temp[i])) {
+    //             for (const [key, value] of Object.entries(value1)){
+    //                 document.write(key);
+    //             }
+    //         }
+    //    }
+    //     let temp2 = temp[1]
+    //    document.write(temp2);
+    </script>
+ 
+  </body>
+</html>

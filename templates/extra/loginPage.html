@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Page</title>
+    </head>
+    <body>
+        <h1 style="text-align: center">Login Page</h1>
+
+        <div>
+            <form action="http://127.0.0.1:5000/checkLogin" method="post" id="loginform">
+                Email<input type="text" name="mail" id="mail"><br>
+                PassWord<input type="text" name="pass" id="pass"><br>
+            </form>
+            <button type="submit" name="lname" form="loginform">Submit</button>
+        </div><br><br>
+
+        <p style="font-style:italic; text-align:center ">If You Are Not a User Then : </p> 
+        <br>
+
+        <div style="text-align:center;">
+        <a href="/regPage">
+            <mark style= "font-weight:bold ; ">Register</mark>
+        </a>
+        </div>
+
+    </body>
+</html>

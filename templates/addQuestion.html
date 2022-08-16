@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='addQuestion.css')}}">
+    <!-- <link rel="stylesheet" href='\static\addQuestion.css'> -->
+</head>
+<body>  
+    <div class="container">
+        <div id="containerBlock" class="insertQandA">
+            <h1 id="qh1">Insert Question</h1>
+            <form action="/insertQueData" method="post" id="qform" class="formGrid">
+
+                <input type="text" id="formQbox" name="que" placeholder="Question" required>
+                <div id="formQh3">
+                    <h3>Correct</h3>
+                </div>
+
+                <input type="text" id="op1" name="option1" placeholder="Option 1" required>
+                <input type="radio" name="ans" id="Rop1" value="option1" style="align-items: center;">
+
+                <input type="text" id="op2" name="option2" placeholder="Option 2" required>
+                <input type="radio" name="ans" id="Rop2" value="option2"  style="align-items: center;">
+
+                <input type="text" id="op3" name="option3" placeholder="Option 3" required>
+                <input type="radio" name="ans" id="Rop3" value="option3"  style="align-items: center;">
+                
+                <input type="text" id="op4" name="option4" placeholder="Option 4" required>
+                <input type="radio" name="ans" id="Rop4" value="option4"  style="align-items: center;">
+
+            </form>
+            <div id="qSubmit">
+                <button type="submit" form="qform" style="height: 100%;">Next Question</button>
+            </div>
+        </div>
+        <div id="creatQuiz">
+            <button type="submit" id="quizButton">Creat Quiz</button>
+        </div>
+    </div>
+</body>
+</html>
